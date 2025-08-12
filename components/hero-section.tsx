@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import { Button } from '@/components/ui/button'
-import { TypingEffect } from '@/components/typing-effect'
-import Image from 'next/image'
+import { Button } from '@/components/ui/button';
+import { TypingEffect } from '@/components/typing-effect';
+import Image from 'next/image';
 
 export function HeroSection() {
-  const roles = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast']
+  const roles = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast'];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
@@ -16,8 +16,8 @@ export function HeroSection() {
           alt="Abstract background"
           fill
           className="object-cover opacity-10"
-          priority
-        />
+          priority />
+
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background"></div>
       </div>
 
@@ -26,7 +26,7 @@ export function HeroSection() {
           {/* Text content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Hi, I'm <span className="text-primary">Alex</span>
+              Hi, I'm <span className='relative flex-1 flex justify-center text-green-500'>Alex</span>
             </h1>
             <h2 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-semibold">
               <TypingEffect texts={roles} />
@@ -54,8 +54,8 @@ export function HeroSection() {
                 alt="Professional headshot"
                 fill
                 className="object-cover"
-                priority
-              />
+                priority />
+
             </div>
             
             {/* Decorative elements */}
@@ -84,6 +84,6 @@ export function HeroSection() {
           animation: scroll 2s infinite;
         }
       `}</style>
-    </section>
-  )
+    </section>);
+
 }
