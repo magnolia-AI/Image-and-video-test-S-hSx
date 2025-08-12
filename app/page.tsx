@@ -1,28 +1,34 @@
-'use client'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { useToast } from "@/hooks/use-toast"
+import { Header } from '@/components/header'
+import { HeroSection } from '@/components/hero-section'
+import { PortfolioSection } from '@/components/portfolio-section'
+import { AboutSection } from '@/components/about-section'
+import { ContactForm } from '@/components/contact-form'
+import { Footer } from '@/components/footer'
 
-{/* 
-  TEMPLATE PAGE: Home
-  This is a template home page.
-  Replace all content with content that suits the users request.
-*/}
 export default function Home() {
-  const { toast } = useToast()
   return (
     <div className="min-h-full">
-
-      <section className="container mx-auto px-4 pt-24 pb-20">
-        <div className="max-w-[800px] mx-auto text-center">
-          <h1 className="text-5xl font-bold tracking-tight lg:text-6xl">
-            Template Starter
-          </h1>
-          <p className="mt-6 text-xl text-muted-foreground max-w-[600px] mx-auto">
-            This is a customizable template. Replace all content with your own using the chat interface.
-          </p>
-        </div>
-      </section>
+      <Header />
+      <main>
+        <HeroSection />
+        <PortfolioSection />
+        <AboutSection />
+        
+        <section id="contact" className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold">Let's Work Together</h2>
+              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                Have a project in mind? Get in touch and let's create something amazing together.
+              </p>
+            </div>
+            
+            <ContactForm />
+          </div>
+        </section>
+      </main>
+      
+      <Footer />
     </div>
   )
 }
