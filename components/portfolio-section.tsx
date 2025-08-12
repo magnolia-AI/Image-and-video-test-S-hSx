@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: 'E-Commerce Dashboard',
     description: 'A comprehensive dashboard for managing online store operations with real-time analytics.',
-    image: '/images/project-dashboard.jpg',
+    image: '/images/project-ecommerce-dashboard.jpg',
     technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     liveUrl: '#',
     githubUrl: '#',
@@ -28,7 +28,7 @@ const projects = [
     id: 2,
     title: 'Task Management App',
     description: 'A productivity application for teams to collaborate on projects and track progress.',
-    image: '/images/project-dashboard.jpg',
+    image: '/images/project-task-management.jpg',
     technologies: ['Next.js', 'Firebase', 'Material UI', 'Redux'],
     liveUrl: '#',
     githubUrl: '#',
@@ -46,7 +46,7 @@ const projects = [
     id: 3,
     title: 'Health & Fitness Tracker',
     description: 'A comprehensive health tracking application with workout plans and nutrition logging.',
-    image: '/images/project-dashboard.jpg',
+    image: '/images/project-health-fitness.jpg',
     technologies: ['React Native', 'Express', 'PostgreSQL', 'GraphQL'],
     liveUrl: '#',
     githubUrl: '#',
@@ -64,7 +64,7 @@ const projects = [
     id: 4,
     title: 'Travel Planning Platform',
     description: 'An all-in-one travel planning solution with itinerary management and booking features.',
-    image: '/images/project-dashboard.jpg',
+    image: '/images/project-travel-planner.jpg',
     technologies: ['Vue.js', 'Python', 'Django', 'PostgreSQL'],
     liveUrl: '#',
     githubUrl: '#',
@@ -82,7 +82,7 @@ const projects = [
     id: 5,
     title: 'Financial Dashboard',
     description: 'A personal finance management tool with investment tracking and expense categorization.',
-    image: '/images/project-dashboard.jpg',
+    image: '/images/project-finance-dashboard.jpg',
     technologies: ['Angular', 'NestJS', 'MongoDB', 'Chart.js'],
     liveUrl: '#',
     githubUrl: '#',
@@ -100,7 +100,7 @@ const projects = [
     id: 6,
     title: 'Learning Management System',
     description: 'An educational platform for creating and delivering online courses with interactive content.',
-    image: '/images/project-dashboard.jpg',
+    image: '/images/project-learning-platform.jpg',
     technologies: ['Next.js', 'TypeScript', 'Firebase', 'WebRTC'],
     liveUrl: '#',
     githubUrl: '#',
@@ -175,3 +175,4 @@ export function PortfolioSection() {
     </section>
   )
 }
+
