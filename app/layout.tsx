@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
-  title: 'Next.js Template',
-  description: 'A customizable template built with Next.js and Tailwind CSS',
+  title: 'Alex Morgan | Portfolio',
+  description: 'Personal portfolio of Alex Morgan, a full-stack developer specializing in modern web applications.',
   icons: {
     icon: '/favicon.ico',
   },
@@ -20,12 +20,11 @@ export default function RootLayout({
     <html lang="en" className="h-full" suppressHydrationWarning>
       <body className="h-full flex flex-col antialiased">
         <ThemeProvider defaultTheme="light" attribute="class">
-          <main className="flex-1">
-            {children}
-          </main>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>
     </html>
   )
 }
+
