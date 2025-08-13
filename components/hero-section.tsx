@@ -26,7 +26,7 @@ export function HeroSection() {
           {/* Text content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Hi, I'm <span className="text-green-500">Alex</span>
+              Hi, I'm <span className="text-green-500">initial</span>
             </h1>
             <h2 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-semibold">
               <TypingEffect texts={roles} />
@@ -87,5 +87,3 @@ export function HeroSection() {
     </section>);
 
 }
-
-
