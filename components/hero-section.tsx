@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { TypingEffect } from '@/components/typing-effect';
 import Image from 'next/image';
+import Video from '@/components/video';
 
 export function HeroSection() {
   const roles = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast'];
@@ -46,16 +47,16 @@ export function HeroSection() {
             </div>
           </div>
           
-          {/* Profile image */}
+          {/* Animated profile video */}
           <div className="relative flex-1 flex justify-center">
             <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
-              <Image
-                src="/images/hero-professional.jpg"
-                alt="Professional headshot"
-                fill
+              <Video
+                src="/videos/hero-animation.mp4"
+                alt="Animated professional headshot"
                 className="object-cover"
-                priority />
-
+                width="100%"
+                height="100%"
+              />
             </div>
             
             {/* Decorative elements */}
@@ -87,5 +88,6 @@ export function HeroSection() {
     </section>);
 
 }
+
 
 
