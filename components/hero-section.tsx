@@ -10,14 +10,15 @@ export function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background image */}
+      {/* Animated background video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/background-abstract.jpg"
-          alt="Abstract background"
-          fill
+        <Video
+          src="/videos/background-abstract-animation.mp4"
+          alt="Animated abstract background"
           className="object-cover opacity-10"
-          priority />
+          width="100%"
+          height="100%"
+        />
 
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background"></div>
       </div>
@@ -88,6 +89,7 @@ export function HeroSection() {
     </section>);
 
 }
+
 
 
 
